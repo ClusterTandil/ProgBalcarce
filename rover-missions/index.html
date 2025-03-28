@@ -10,12 +10,65 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script defer src="./src/main.js" type="module"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script defer src="./scripts/main.js" type="module"></script>
 </head>
 
-<body class="container">
-    <header>
-        <h1>Mars Rover Missions by NASA</h1>
+<main class="container">
+    <header class="text-center bg-body-tertiary my-2 sticky-md-top ">
+        <h4 class="display-7 mb-0">Exploration of Mars</h4>
+        <h1 class="display-3">The Rover Missions</h1>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#program">Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rovers">Rovers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pictures</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Missions
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Spirit</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Opportunity</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Curiosity</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/perseverance.html">Perseverance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand d-none d-md-block" href="https://www.nasa.gov" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/meatball-nasa-logo.png" alt="nasa logo" width="60" height="60"
+                            class="d-inline-block align-text-top">
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
     <section>
         <header>
@@ -27,6 +80,375 @@
             </div>
         </div>
     </section>
+
+    <section class="mt-5 mb-5 py-5" id="program">
+        <header class="text-center py-1 mt-4 mb-5">
+            <h2 class="display-7 my-5">Mars Exploration Program</h2>
+        </header>
+        <div class="accordion" id="accordionProgramInfo">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        MISSION STATEMENT
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionProgramInfo">
+                    <div class="accordion-body">
+                        <strong>The goal of the Mars Exploration Program</strong> is to explore Mars and to
+                        provide a continuous flow of scientific information and discovery
+                        through a carefully selected series of robotic orbiters, landers and
+                        mobile laboratories interconnected by a high-bandwidth Mars/Earth
+                        communications network.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ABOUT THE PROGRAM
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionProgramInfo">
+                    <div class="accordion-body">
+                        <p><strong>
+                                NASA’s Mars Exploration Program is a science-driven,technology-enabled
+                                study of Mars as a planetary system in order to understand:
+                            </strong></p>
+                        <ul>
+                            <li>the formation and early evolution of Mars as a planet</li>
+                            <li>
+                                the history of geological and climate processes that have shaped Mars
+                                through time
+                            </li>
+                            <li>
+                                the potential for Mars to have hosted life (its “biological
+                                potential”)
+                            </li>
+                            <li>
+                                the future exploration of Mars by humans, and how Mars compares to and
+                                contrasts with Earth
+                            </li>
+                        </ul>
+                        <p><strong>
+                                MEP’s programmatic goals are directly responsive to the Agency’s 2014
+                                Strategic Plan. They include:
+                            </strong></p>
+                        <ul>
+                            <li>maintaining a continuous scientific presence at Mars</li>
+                            <li>
+                                providing continuing improvements in technical capabilities of robotic
+                                Mars missions
+                            </li>
+                            <li>
+                                capitalizing on measurement opportunities that contribute to the
+                                advancement of knowledge required for future human exploration of
+                                Mars, in collaboration with the Human Exploration and Operation
+                                Mission Directorate (HEOMD) and the Space Technology Mission
+                                Directorate (STMD)
+                            </li>
+                            <li>
+                                ensuring that scientific measurements that can enable human
+                                exploration of Mars are considered for flight, and that opportunities
+                                to fly instruments-of-opportunity and technology demonstrations from
+                                HEOMD and STMD are exercised on a mutually agreed upon basis
+                            </li>
+                            <li>
+                                supporting communications activities required for the successful
+                                conduct of MEP’s core science mission and NASA’s goals for helping to
+                                develop scientific literacy in the nation
+                            </li>
+                        </ul>
+
+                        <p>MEP efforts also respond directly to NASA’s 2014 Science Plan. MEP
+                            derives its science goals from interactions with the planetary and Mars
+                            science community (e.g., through the Mars Exploration Program Analysis
+                            Group, or MEPAG).</p>
+
+                        <p>MEP has an evolving science strategy, with related MEP
+                            Science Goals that are consistent with the priorities in the 2011 Solar
+                            System Decadal Survey Vision and Voyages for Planetary Science in the
+                            Decade 2013-2022, conducted by the National Academy of Science’s
+                            National Research Council (NRC). These goals are formed into specific
+                            requirements and, as appropriate, applied to the individual missions in
+                            Program-level project requirements.</p>
+                        <p><strong>To support an integrated program structure, MEP carries out a number of
+                                activities that provide crosscutting functions and long-term investments
+                                for the future:</strong></p>
+                        <ul>
+                            <li>
+                                The Mars Data and Analysis Program (MDAP) is a scientific research and
+                                analysis effort that sponsors detailed studies of data returned from
+                                Mars missions in order to shape the next steps of the Program’s
+                                future-mission studies. Research conducted through MDAP is intended to
+                                improve upon open science questions at Mars relevant to current
+                                hypotheses. Brief synopses of research funded through MDAP can be
+                                found on the NSPIRES website and typing in MDAP as the keyword.
+                            </li>
+                            <li>
+                                The Program Formulation Office conducts advanced studies of future
+                                missions. MEP sets priorities for these studies through informal
+                                (e.g., MEPAG) and formal channels (e.g., the National Academies’ Solar
+                                System Decadal Surveys). Studies and planning for these missions, as
+                                well as identification of technology needs and investments to meet
+                                them, are the focus of long-range program planning and targeted
+                                technology investments. Advanced studies also address possible needs
+                                to replenish Mars telecommunication capabilities and other
+                                programmatic support (e.g., landing site certification) that may be
+                                needed to support future missions. Orbiters with these required
+                                capabilities and/or other priorities such as sample return flight
+                                elements may also provide opportunities to address science objectives.
+                                Missions that address other Agency objectives (e.g., preparations for
+                                the future human exploration of the martian system) are considered
+                                jointly with key stakeholders from other parts of the Agency. An
+                                additional responsibility for the Program Formulation Office is
+                                definition of interfaces between ongoing missions or missions in
+                                development, and future missions that have not yet begun development.
+                                This activity is especially important where Program objectives require
+                                coordination across multiple projects (e.g., the case of multiple
+                                missions cooperating on the return of samples from the surface of
+                                Mars).
+                            </li>
+                            <li>
+                                The MEP supports the implementation of large and small directed
+                                missions as well as those that are competitively selected and led by a
+                                PI. These missions have included the Phoenix mission, which landed in
+                                the northern polar region of Mars to study ice, and the MAVEN mission,
+                                which is quantifying the rate of escape of atmospheric gases from the
+                                planet and implications for the ancient martian climate.
+                            </li>
+                            <li>
+                                Other crosscutting activities include overall science strategy
+                                optimization, Program risk management, Program risk communication,
+                                telecommunication strategy, advanced capability development
+                                (technology and program infrastructure), interfaces with future
+                                missions, planetary protection, and communications with target NASA
+                                audiences identified in the 2013 NASA Communications Framework.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ORGANIZATION
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionProgramInfo">
+                    <div class="accordion-body">
+                        <p>In 1994, NASA announced the start of the Mars Exploration Program (MEP),
+                            initially called the Mars Surveyor Program. NASA assigned the lead role
+                            for MEP implementation to the Jet Propulsion Laboratory (JPL). MEP
+                            explores Mars on behalf of NASA’s Science Mission Directorate (SMD). MEP
+                            currently operates rovers and orbiters on and around Mars, contributes
+                            to Mars missions conducted by national and international partners, and
+                            is formulating and developing future rover and orbiter missions.
+                            Scientific data and associated information for all MEP missions are
+                            archived in the NASA Planetary Data System.</p>
+                        <p>Organized programmatically,
+                            <strong>MEP missions mutually support each other in three key aspects:</strong>
+                        </p>
+
+
+                        <ol>
+                            <li>
+                                Scientific discoveries by one mission can drive the formulation of the
+                                scientific focus of future missions. Acquired data provides crucial
+                                information for the execution of future missions. For example, orbiter
+                                missions provide data for characterizing and certifying candidate
+                                landing sites for future missions, while landed assets provide ground
+                                truth and detailed context for orbital remote-sensing results.
+                                Scientific observations from landed assets are interpreted and placed
+                                into a broader context using research results from other areas of the
+                                planet, which help inform our understanding of Mars as a system.
+                            </li>
+                            <li>
+                                MEP missions develop and demonstrate engineering capability as
+                                feed-forward to enable future missions (e.g., entry-descent-landing
+                                capabilities).
+                            </li>
+                            <li>
+                                MEP orbiters enhance the scientific return of landed missions by
+                                serving as telecommunication relays for those missions, enabling
+                                significant increases in data return.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        WHY MARS?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionProgramInfo">
+                    <div class="accordion-body">
+                        <p>
+                            <strong>There are several strategic, practical and scientific reasons for humans
+                                to explore Mars.</strong> Among them we know that Mars is the most accessible
+                            place in the solar system. Additionally, exploring Mars provides the
+                            opportunity to possibly answer origin and evolution of life questions,
+                            and could someday be a destination for survival of humankind.
+                        </p>
+                        <p>
+                            In the strategic sense, exploring Mars demonstrates our political and
+                            economic leadership as a nation, improves the quality of life on Earth,
+                            helps us learn about our home planet, and expands US leadership in the
+                            peaceful, international exploration of space.
+                        </p>
+                        <p>
+                            From a practical perspective we know that Mars is unique across the
+                            entire solar system in that it is a terrestrial planet with an
+                            atmosphere and climate, its geology is known to be very diverse and
+                            complex (like Earth), and it appears that the climate of Mars has
+                            changed over its history (like Earth).
+                        </p>
+                        <p>
+                            Overall, many of the key questions in solar system science can be
+                            addressed effectively by exploring Mars. This endeavor also serves to
+                            inspire the next generation of explorers and dramatically expand human
+                            knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        RESEARCH PROGRAMS
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionProgramInfo">
+                    <div class="accordion-body">
+                        <p><strong>
+                                Scientific research to increase our knowledge of Mars as a planetary
+                                system is a key activity that NASA funds.</strong> The primary mechanism for
+                            providing this funding is what is known as Research and Analysis (R&A)
+                            programs. Scientists from all over the United States (university
+                            professors, NASA center researchers, etc.) submit research grant
+                            proposals to these programs. The proposals are peer reviewed and
+                            selected for funding based on the quality of science.
+                        </p>
+                        <p>
+                            The dedicated Mars research program is the Mars Data Analysis Program
+                            (MDAP). The goal of MDAP is to enhance the scientific return of data
+                            collected during Mars missions. Data used in the program must be
+                            publicly available 30 days before the proposal submission deadline.
+                            Currently there are 108 active grants and 10 active NASA Earth and Space
+                            Science Fellowships (NESSF) for graduate students.
+                        </p>
+                        <p>
+                            Mars research is also well represented in other R&A programs in the
+                            Planetary Science Division (primarily in the Solar System Workings and
+                            Habitable Worlds Programs).
+                        </p>
+                        <p>
+                            Results of research activities are published in peer reviewed
+                            publications and presented at scientific conferences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        PLANETARY RESOURCES
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionProgramInfo">
+                    <div class="accordion-body">
+                        <p>
+                            <strong>In anticipation of someday sending humans to Mars, NASA has begun
+                                searching for suitable locations for humans to land.</strong> The agency is
+                            looking for locations of high scientific value that would also provide
+                            resources to allow human explorers to land, live, and work on Mars.
+                            Locally derived natural resources such as water and oxygen are crucial
+                            for humans to explore Mars. (More about exploration zones.)
+                        </p>
+                        <p>
+                            Liquid water could be potentially be extracted from ground ice (at or
+                            buried beneath the surface), the atmosphere or hydrated minerals. Oxygen
+                            can be generated from the carbon dioxide that makes up most of Mars'
+                            atmosphere. The Mars 2020 rover mission will include an instrument
+                            (MOXIE) to demonstrate the technology for oxygen generation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        TECHNOLOGIES
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionProgramInfo">
+                    <div class="accordion-body">
+                        <p>
+                            The Mars Exploration Program invests in its own Mars-relevant
+                            technologies, as well as staying abreast of complementary innovations
+                            across NASA and the Aerospace industry.<strong> Technology investments unique to
+                                Mars include:</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Mars Ascent Vehicle:</b> An essential element if NASA is ever to
+                                return materials (or people) from Mars, NASA’s Mars Exploration
+                                Program is currently investing in propulsion & guidance technology
+                                that could survive the trip to Mars and its harsh surface environments
+                                before being launched back into space. Hybrid rocket motors using
+                                paraffin fuel burned with liquid oxides of nitrogen are especially
+                                promising for this application. Within the thin Mars atmosphere,
+                                aerodynamic controls such as fins will not be effective, so
+                                investments are also being made in Liquid Injection Thrust Vector
+                                Control (LITVC). Using small ports to inject liquid oxidizer directly
+                                into the nozzle at different points, the direction of the MAV can be
+                                controlled quickly and effectively with no moving parts, even in the
+                                thin atmosphere on Mars.
+                            </li>
+                            <li>
+                                <b>Planetary Protection Technologies:</b> NASA’s Mars Exploration
+                                Program is also investing in technologies to enable the safe transport
+                                of materials from Mars to Earth (e.g., technologies for containing
+                                samples and sample containers for Mars materials, as well as
+                                technologies for sterilizing the outsides of these containers).
+                                Although it is not known whether or not life ever existed on Mars,
+                                concept studies for returning Martian material are conducted under
+                                safety standards that are as high as, or higher than, standards used
+                                for transporting known hazardous material on Earth. Technologies
+                                currently under investigation include in-space sterilization
+                                approaches (e.g., localized heat sterilization and plasma
+                                sterilization), as well as sealing technologies (e.g., in-space metal
+                                brazing and explosive welding).
+                            </li>
+                        </ul>
+                        <h6>From Robots to Humans</h6>
+                        <p>
+                            The science and technology developed through the Mars Exploration
+                            Program will enable humans to one day explore the Red Planet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="text-center bg-dark mt-5 py-5 text-white row">
+    <h6>Programa Vértice - Sede Balcarce</h6>
+    <p>2025</p>
+    <small>&lt;profe marce/></small>
+    <a class="mt-4" href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/meatball-nasa-logo.png" alt="nasa logo" width="60" height="60"
+            class="d-inline-block align-text-top">
+    </a>
+</footer>
 </body>
 
 </html>
