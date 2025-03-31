@@ -1,0 +1,13 @@
+{
+  "name": "importexport",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Punto.js",
+  "scripts": {
+    "dev": "node Recta.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
