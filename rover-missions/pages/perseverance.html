@@ -16,8 +16,8 @@
     <title>Document</title>
 </head>
 
-<body class="container">
-    <header class="text-center bg-body-tertiary my-2 sticky-md-top ">
+<body class="container d-flex flex-column min-vh-100">
+    <header class="row text-center bg-body-tertiary my-2 sticky-md-top ">
         <h4 class="display-7 mb-0">Exploration of Mars</h4>
         <h1 class="display-3">The Rover Missions</h1>
         <nav class="navbar navbar-expand-md bg-body-tertiary">
@@ -73,21 +73,18 @@
         </nav>
     </header>
 
-    <div class="col-6" id="controls">
-        <div class="row gap-4 justify-content-center justify-content-xxl-between" id="roversContainer">
-            <div class="spinner-border text-primary align-self-center" role="status" id="spinner">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+    <div class="row mt-1 mb-4" id="controls">
+        <div class="spinner-border text-primary align-self-center" role="status" id="spinner">
+            <span class="visually-hidden">Loading...</span>
         </div>
-        <form class="form d-none" id="form">
+        <form class="form d-none col col-sm-4" id="form">
             <label class="form-label" for="sol-number" id="sol-number-label">Photos from day</label>
             <input type="number" name="sol-number" id="sol-number-input" min="1" class="form-control w-50" required>
-            <input type="submit" value="search" class="btn btn-primary">
+            <input type="submit" value="search" class="btn btn-primary mt-2">
         </form>
     </div>
-    <section class="row gap-3 justify-content-center" id="photos-container"></section>
-    <section id="photos-container"></section>
-    <footer class="text-center bg-dark mt-5 py-5 text-white row">
+    <section class="row gap-3 justify-content-between" id="photos-container"></section>
+    <footer class="text-center bg-dark mt-5 py-5 text-white">
         <h6>Programa Vértice - Sede Balcarce</h6>
         <p>2025</p>
         <small>&lt;profe marce/></small>

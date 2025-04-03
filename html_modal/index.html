@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+    <script src="./index.js" defer></script>
+    <title>Modal HTML</title>
+</head>
+
+<body>
+    <header>
+        <h2>Ventanas modales nativas con HTML</h2>
+        <button id="btnOpenModal">abrir modal</button>
+    </header>
+
+    <dialog id="modalDialog">
+        <form action="" method="dialog" id="modalForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+            <label for="interests">Interest</label>
+            <textarea name="interests" id="interests"></textarea>
+            <button type="submit">Aceptar</button>
+            <button type="button" id="btnCloseModal">Cancelar</button>
+        </form>
+    </dialog>
+</body>
+
+</html>
