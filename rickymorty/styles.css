@@ -1,0 +1,89 @@
+/* Custom styles to complement Bootstrap */
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+    font-size: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(32, 201, 151, 0.2);
+    cursor: pointer;
+  }
+  
+  /* Status indicators */
+  .status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .status-alive {
+    background-color: #198754; /* Bootstrap success color */
+  }
+  
+  .status-dead {
+    background-color: #dc3545; /* Bootstrap danger color */
+  }
+  
+  .status-unknown {
+    background-color: #6c757d; /* Bootstrap secondary color */
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #212529;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #198754;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #157347;
+  }
+  
+  /* Character card image container */
+  .character-image-container {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .character-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Modal character image */
+  .modal-character-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .modal-character-image {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Disabled button styles */
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
