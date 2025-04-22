@@ -56,22 +56,22 @@ class Auto {
     }
  }
 
- let motor16 = new Motor(16);
- let motor14 = new Motor(14);
- let motor10 = new Motor(10);
+//  let motor16 = new Motor(16);
+//  let motor14 = new Motor(14);
+//  let motor10 = new Motor(10);
  
- let primerAuto: Auto = new Auto(motor16,'Ford', 'Fiesta',2022);
- let segundoAuto: Auto = new Auto(motor14,'Renault', 'Clio',2000);
- let tercerAuto: Auto = new Auto(motor10,'Peugeot', '307');
- let randomalgo: number = 12;
- let arrAutos: Auto[] = [primerAuto, segundoAuto, tercerAuto];
+//  let primerAuto: Auto = new Auto(motor16,'Ford', 'Fiesta',2022);
+//  let segundoAuto: Auto = new Auto(motor14,'Renault', 'Clio',2000);
+//  let tercerAuto: Auto = new Auto(motor10,'Peugeot', '307');
+//  let randomalgo: number = 12;
+//  let arrAutos: Auto[] = [primerAuto, segundoAuto, tercerAuto];
 
-arrAutos.forEach(auto => {
-    console.log(auto.getMarca());
-    console.log(auto.devolverthis());
-    console.log(auto.getMotor());
-    console.log(auto.getMotor().getLitros());
-    }
-);
+// arrAutos.forEach(auto => {
+//     console.log(auto.getMarca());
+//     console.log(auto.devolverthis());
+//     console.log(auto.getMotor());
+//     console.log(auto.getMotor().getLitros());
+//     }
+// );
 
 
